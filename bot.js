@@ -6,6 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    if (message.author.bot) return;
     if (message.content = 'I want a promotion') {
     	message.reply('no u');
   	}
