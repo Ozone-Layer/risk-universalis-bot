@@ -7,15 +7,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.author.bot) return;
-    if (message.content == 'I want a promotion') {
+    if (message.content = 'I want a promotion') {
     	message.reply('no u');
   	}
-    
-    if (message.content.match(/sock/i)) 
-{
-   bot.sendMessage(message, "SOCK DETECTED!");
-}
-    
 });
 
 // THIS  MUST  BE  THIS  WAY
