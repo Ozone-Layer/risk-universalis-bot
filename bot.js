@@ -10,12 +10,13 @@ client.on('message', message => {
     if (message.content == 'I want a promotion') {
     	message.reply('no u');
   	}
-});
-
-if (message.content.match(/sock/i)) 
+    
+    if (message.content.match(/sock/i)) 
 {
    bot.sendMessage(message, "SOCK DETECTED!");
 }
+    
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
