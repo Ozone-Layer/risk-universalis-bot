@@ -1,6 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+client.on('ready', () => {
+    console.log('I am ready!');
+});
+
 var Discord = require('discord.io');
 var logger = require('winston');
 var auth = require('./auth.json');
